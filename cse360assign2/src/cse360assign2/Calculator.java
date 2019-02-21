@@ -5,30 +5,38 @@ public class Calculator {
 	private int total;
 	
 	public Calculator () {
-		total = 0;  // not needed - included for clarity
+		//total = 0;  // not needed - included for clarity
 	}
 	
 	public int getTotal () {
-		return 0;
+		return total;
 	}
 	
-	public void add (int value) {
-		
+	public int add (int value) {
+		total = total + value;
+		return total;
 	}
 	
-	public void subtract (int value) {
-		
+	public int subtract (int value) {
+		total = total - value;
+		return total;
 	}
 	
-	public void multiply (int value) {
-		
+	public int multiply (int value) {
+		total = total * value;
+		return total;
 	}
 	
-	public void divide (int value) {
-		
+	public int divide (int value) {
+		if (value == 0) {
+			return 0;
+		}
+		total = total/value;
+		return total;
 	}
 	
 	public String getHistory () {
 		return "";
 	}
+	
 }
