@@ -3,7 +3,7 @@ package cse360assign2;
 public class Calculator {
 
 	private int total; 
-	public int value1 = 4 ,value2 = 2,value3 = 1,value4 = 1; // values for calculations
+	private int value1 = 4 ,value2 = 2,value3 = 1,value4 = 1; // values for calculations
 	
 	
 	public Calculator () {
